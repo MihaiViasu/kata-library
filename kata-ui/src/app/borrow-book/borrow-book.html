@@ -1,0 +1,13 @@
+<mat-card>
+  <h2>Borrow a Book</h2>
+    <mat-form-field class="full-width">
+    <mat-label>Account ID</mat-label>
+    <input matInput [(ngModel)]="accountId" type="number" name="bookId">
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Book ID</mat-label>
+    <input matInput [(ngModel)]="bookId" type="number" name="bookId">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="borrowBook()">Borrow</button>
+</mat-card>

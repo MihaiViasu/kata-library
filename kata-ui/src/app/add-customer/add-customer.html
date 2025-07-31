@@ -1,0 +1,17 @@
+<mat-card>
+  <h2>Add New Customer</h2>
+
+  <form (ngSubmit)="addCustomer()">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="customer.name" name="name" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="customer.email" name="email" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Add Customer</button>
+  </form>
+</mat-card>

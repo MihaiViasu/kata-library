@@ -1,0 +1,28 @@
+# Java
+*.class
+*.jar
+*.war
+*.iml
+/build/
+/.gradle/
+
+# Gradle
+.gradle/
+build/
+
+# Node/Angular
+node_modules/
+dist/
+.angular/
+npm-debug.log
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Docker
+**/target/
+**/.env

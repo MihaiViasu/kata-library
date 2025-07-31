@@ -1,0 +1,32 @@
+<mat-card>
+  <h2>Add New Book</h2>
+
+  <form (ngSubmit)="addBook()">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Title</mat-label>
+      <input matInput [(ngModel)]="book.title" name="title" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Author</mat-label>
+      <input matInput [(ngModel)]="book.author" name="author" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>ISBN</mat-label>
+      <input matInput [(ngModel)]="book.isbn" name="isbn" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Total Copies</mat-label>
+      <input type="number" matInput [(ngModel)]="book.totalCopies" name="copies" min="1" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Available Copies</mat-label>
+      <input type="number" matInput [(ngModel)]="book.availableCopies" name="available" min="1" />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Add Book</button>
+  </form>
+</mat-card>
