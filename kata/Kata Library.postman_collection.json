@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "26116d46-0576-4bac-8e59-20448722f13c",
+		"name": "Kata Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24838296"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "GET Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/accounts/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Add Customer 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Karl Doe\",\n    \"email\": \"karl@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/accounts/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Add Customer 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Michal Davidson\",\n    \"email\": \"davidson@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/accounts/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Library",
+			"item": [
+				{
+					"name": "GET Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/library/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Add Book 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"The Very Hungry Caterpillar\",\n    \"author\": \"Eric Carle\",\n    \"isbn\": \"978-0399226908\",\n    \"totalCopies\": 1,\n    \"availableCopies\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/library/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Add Book 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"The Very Busy Spider\",\n    \"author\": \"Eric Carle\",\n    \"isbn\": \"978-0593382790\",\n    \"totalCopies\": 2,\n    \"availableCopies\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Add Book 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"If You Give a Mouse a Cookie\",\n    \"author\": \"Laura Numeroff\",\n    \"isbn\": \"978-0060245863\",\n    \"totalCopies\": 3,\n    \"availableCopies\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/library/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Borrow Customer 1 Book 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountId\": 1,\n    \"bookId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/library/borrow",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"borrow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Return Customer 1 Book 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountId\": 1,\n    \"bookId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/library/return",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"return"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Borrow Customer 2 Book 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountId\": 2,\n    \"bookId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/library/borrow",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"borrow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Return Customer 2 Book 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountId\": 2,\n    \"bookId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/library/return",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"return"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Customer 1 Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/library/customer/1/borrowed-books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"customer",
+								"1",
+								"borrowed-books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Customer 2 Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/library/customer/2/borrowed-books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"customer",
+								"2",
+								"borrowed-books"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
